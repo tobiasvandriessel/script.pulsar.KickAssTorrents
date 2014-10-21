@@ -10,6 +10,7 @@ def search_episode(episode):
 def search_movie(movie):
 	return search("%(title)s %(year)d" % movie)
 
+
 provider.register(search, search_movie, search_episode)
 
 
