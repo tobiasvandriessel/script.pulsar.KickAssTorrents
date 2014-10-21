@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<addon id="script.pulsar.KickAssTorrents" name="Pulsar KickAssTorrents Provider" version="0.0.1" provider-name="cpkiller">
+<addon id="script.pulsar.KickAssTorrents" name="Pulsar KickAssTorrents Provider" version="0.2" provider-name="cpkiller">
 	<requires>
 		<import addon="xbmc.python" version="2.12.0"/>
+		<import addon="plugin.video.pulsar" version="0.2"/>
 	</requires>
 	<extension point="xbmc.python.script" library="main.py">
 		<provides>executable</provides>
