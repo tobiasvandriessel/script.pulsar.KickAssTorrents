@@ -1,7 +1,7 @@
 from pulsar import provider
 
 def search(query):
-	resp = provider.GET("http://kickass.to/search?q=%s" % provider.quote_plus(query), params={"q": query,})
+	resp = provider.GET("http://kickass.to/search?q=%s" % provider.quote_plus(query))
 	return provider.extract_magnets(resp.data)
 
 def search_episode(episode):
